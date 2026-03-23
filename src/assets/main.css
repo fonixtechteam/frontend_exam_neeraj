@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Fonts */
+@font-face {
+  font-family: Plain;
+  src: url("/fonts/plain-regular-webfont.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "silk-serif";
+  src: url("/fonts/silkserif-regularitalic-webfont.woff") format("woff");
+  font-style: italic;
+  font-display: swap;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  
+}
+
+html::-webkit-scrollbar {
+  display: none; 
+}
+
+body {
+  font-family: Plain, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.font-plain {
+  font-family: Plain, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+.font-silk {
+  font-family: "silk-serif", Georgia, serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
